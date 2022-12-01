@@ -1,0 +1,15 @@
+<!--pages/show/show.wxml-->
+<image class="w100" src="https://source.unsplash.com/random" mode="aspectFill"></image>
+<view class="pa40">
+  <view class="f32 bold mb20">{{flat.name}}</view>
+  <view class="grey">{{flat.address}}</view>
+</view>
+
+<view class="bt b-dim pt30">
+  <view class="px40 mb">Find us here</view>
+  <map class="w100" style="height: 500rpx;"
+    latitude="{{flat.latitude}}" longitude="{{flat.longitude}}"
+    scale="17" markers="{{markers}}"></map>
+</view>
+
+<button class="btn mt20" bindtap="changeLocation">Change Location</button>

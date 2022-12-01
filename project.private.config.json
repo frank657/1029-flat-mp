@@ -1,0 +1,20 @@
+{
+  "projectname": "flats-mp",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "show",
+          "pathName": "pages/show/show",
+          "query": "id=2",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

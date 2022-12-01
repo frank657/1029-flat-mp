@@ -1,0 +1,12 @@
+<view class="pa40 vh100 bg-dim">
+  <view class="f36 bold mb30 text-center">Flats</view>
+  <view wx:for="{{flats}}" wx:key="index" bindtap="goToShow" data-id="{{item.id}}"
+    class="pa30 radius30 shadow mb30 bg-white">
+    <image src="https://source.unsplash.com/random" mode="aspectFill"
+      class="w100 mb20 radius20" style="height: 250rpx;"></image>
+    <view class="bold f32">
+      {{item.name}}
+    </view>
+    <view class="f28 grey mt20">{{item.address}}</view>
+  </view>
+</view>
